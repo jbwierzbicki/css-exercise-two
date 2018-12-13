@@ -1,6 +1,6 @@
 body {
-  background-color: #ff0000;
-  color: #0000FF;
+  background-color: #FF7575;
+  color: #000080;
 }
 
 nav {
@@ -26,6 +26,7 @@ nav {
 .left, .right {
   float: left;
   width: 50%;
+  font-size: 20px;
 }
 
 .right {
@@ -42,6 +43,10 @@ li {
   padding: 30px;
 }
 
+.right li:hover {
+  animation: bounce 1s;
+}
+
 article {
   padding-top: 100px;
 }
@@ -49,4 +54,44 @@ article {
 .container {
   margin: 0 auto;
   width: 50%;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 57px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 32px;
+}
+p {
+  line-height: 23px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.story-text {
+  font-size: 17px;
+  line-height: 23px;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
 }
